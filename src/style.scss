@@ -1,0 +1,175 @@
+@use "./module/_reset.scss";
+@use "./module/_variable.scss" as v;
+@use "./module/_mixin.scss" as mix;
+
+@use "./module/_pc.scss";
+@use "./module/_sp.scss";
+@use "./module/_fv.scss";
+
+
+*{
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+.en{
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+//タブレットサイズ
+@media screen and (max-width : v.$tbw){
+    .spcon{
+        width: 100%;
+    }
+    .pccontents{
+      &__inner{
+        display: none;
+      }
+    }
+}
+//SPサイズ
+@media screen and (max-width : v.$spw){
+
+}
+
+.scroll-fade{opacity: 0; transition: all 2s/*処理にかかる時間*/;}
+.scroll-fade2, .scroll-fade3{opacity: 0; transition: all 2s/*処理にかかる時間*/;}
+.scroll-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
+.scroll-up.done, .scroll-fade.done, .scroll-fade2.done, .scroll-fade3.done{opacity : 1; transform : translate(0, 0);}
+.load-fade {opacity : 0; transition : all 2s/*処理にかかる時間*/;}
+.load-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
+.load-up.done, .load-fade.done, {opacity : 1; transform : translate(0, 0);}
+
+
+.load-fade2, .load-fade3{
+  opacity : 0; transition : all 4s;
+} 
+ .load-fade2.done {
+  animation-name: fadeInAnime;
+	animation-duration: 4s;
+  transform : translate(0, 0);
+  opacity : 1; 
+ }
+ .load-fade3.done {
+  animation-name: fadeInAnime2;
+	animation-duration:5s;
+  opacity : 1; 
+
+ }
+
+ @keyframes fadeInAnim2{
+  0% {
+      opacity: 0;
+  }
+  90%{
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+ @keyframes fadeInAnime{
+  0% {
+      opacity: 0;
+  }
+  80%{
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+//footer
+.footer{
+    width: 100%;
+    padding: 0 10%  10.6%;
+
+    &__bnrs{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style-type: none;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__copy{
+      text-align: center;
+      @include mix.fz(14);
+    }
+    &__logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10.6% auto 66px;
+      &--tp{
+        @include mix.bg();
+        background: url('./images/logo_tp.png');
+        width: 84px;
+        height: 22px;
+        margin: 0 35px 0 0;
+      }
+      &--incs{
+        @include mix.bg();
+        background: url('./images/logo_incs.png');
+        width: 34px;
+        height: 38px;
+      }
+    }
+}
+
+.spotify{
+  @include mix.bg();
+  background: url('./images/spotify.svg');
+  width: 86px;
+  height: 26px;
+  margin: 0 auto;
+}
+.amazonm{
+  @include mix.bg();
+  background: url('./images/amazonmu.svg');
+  width: 131px;
+  height: 26px;
+  margin: 28px auto 30px;
+}
+.itune{
+  @include mix.bg();
+  background: url('./images/itune.svg');
+  width: 100px;
+  height: 26px;
+  margin: 0 auto;
+}
+.amazon{
+  @include mix.bg();
+  background: url('./images/amazon.png');
+  width: 202px;
+  height: 106px;
+  margin: 0 auto;
+}
+@media screen and (max-width : v.$tbw){
+  .spotify{
+    width: 22.93vw;
+    height: 6.93vw;
+  }
+  .amazonm{
+    width: 34.93vw;
+    height: 6.93vw;
+    margin: 28px auto 30px;
+  }
+  .itune{
+    width: 26.66vw;
+    height: 6.93vw;
+  }
+  .amazon{
+    width: 53.86vw;
+    height: 28.26vw;
+    margin: 0 auto;
+  }
+}

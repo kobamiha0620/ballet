@@ -1,0 +1,39 @@
+@use "./_variable.scss" as v;
+@use "./_mixin.scss" as mix;
+.sp{
+    &__ttl{
+        display: none;
+    }
+    &__link{
+        display: none;
+    }
+}
+@media screen and (max-width : v.$tbw){
+
+    .sp{
+        &__ttl{
+            @include mix.bg();
+            background: url('./images/logo_pc.png') no-repeat;
+            width: 42.66vw;
+            height: 24.26vw;
+            position: absolute;
+            top: -1.6vw;
+            left: -5vw;
+            display: block;
+        }
+        &__link{
+            @include mix.bg();
+            background: url('./images/link_top.svg') no-repeat;
+            width: 38.66vw;
+            height: 38.66vw;
+            position: absolute;
+            bottom: -16vw;
+            right: -4px;
+            display: block;
+        }
+    }
+        
+}
+
+
+

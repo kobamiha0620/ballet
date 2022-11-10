@@ -1,0 +1,567 @@
+@use "./_variable.scss" as v;
+@use "./_mixin.scss" as mix;
+
+.spcon{
+    background: #FFF;
+}
+.fv{
+    @include mix.bg();
+    background: url('./images/fv_bg.jpg') no-repeat;
+    width: 100%;
+    height: 498px;
+    position: relative;
+    background-size: 100% auto;
+    @media screen and (max-width : v.$tbw){
+        height: 133vw;
+    }
+    &__txt01{
+        @include mix.bg();
+        background: url('./images/fv_txt01.jpg') no-repeat;
+        width: 6.4%;
+        height: 303px;
+        position: absolute;
+        top: 10.66%;
+        right: 20px;
+        @media screen and (max-width : v.$tbw){
+            height: 80.8vw;
+            right: 5.33vw;
+        }
+    }
+
+    &__txt02{
+        @include mix.bg();
+        background: url('./images/fv_txt02.jpg') no-repeat;
+        width: 6.4%;
+        height: 279px;
+        position: absolute;
+        top: 10.66%;
+        right: 50px;
+        @media screen and (max-width : v.$tbw){
+            height: 74.4vw;
+            right: 13.33vw;
+        }
+    }
+
+}
+.plane{
+    &__ttl{
+        text-align: center;
+        @include mix.fz(34);
+        margin: 0 auto 38px;
+        line-height: 1.2;
+    }
+    &__txt{
+        text-align: center;
+        @include mix.fz(14);
+        line-height: 1.78;
+    }   
+}
+.about{
+    padding: 56px 5% 0;
+    @media screen and (max-width : v.$tbw){
+        padding-top: 15vw;
+    }
+
+    &__txts{
+        margin-bottom: 22px;
+        @media screen and (max-width : v.$tbw){
+            margin-bottom: 6vw;
+        }
+    }
+    &__txt{
+        font-weight: 600;
+        text-align: center;
+        color: #FFF;
+        @include mix.fz(18);
+        line-height: 1.6;
+        margin: 0 auto 6px;
+        span{
+            display: inline-block;
+            background: #3690B2;
+            padding: 1px 3px;
+        }
+    }
+    &__creator{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        &--name{
+            @include mix.fz(12);
+            text-align: center;
+            line-height: 1.7;
+            span{
+                font-weight: 800;
+            }
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: #444;
+
+        }
+        li{
+            width: 50%;
+            min-width: 50%;
+            list-style-type: none;
+            margin: 0 0 20px;
+            @media screen and (max-width : v.$tbw){
+                margin: 0 0 5.3vw;
+            }
+        }
+        &--img{
+            padding: 0 9%;
+            margin: 0 0 10px;
+            @media screen and (max-width : v.$tbw){
+                margin: 0 0 2.6vw;
+            }
+            img{
+                border-radius: 50%;
+                border: solid 3px v.$bg;
+                display: inline-block;
+            }
+        }
+    }
+    .plane__txt{
+        margin-bottom: 30px;
+        @media screen and (max-width : v.$tbw){
+            margin: 0 0 8vw;
+        }
+    }
+}
+
+
+.news{
+
+    padding-top: clamp(55px, 14.6%, 14.6%);
+
+    &__txts{
+        margin: 0 14%;
+        padding: 0;
+    
+    }
+    &__txt{
+        @include mix.fz(16);
+        margin: 1em 0 0;
+    }
+}
+
+.project{
+    padding-top: clamp(55px, 14.6%, 14.6%);
+    .plane__ttl{
+        margin-bottom: clamp(33px, 9%, 9%);
+    }
+    &__contents{
+        background: url('./images/bg_project.png') no-repeat;
+        background-position: 0 0;
+        background-size: 100% auto;
+        background-color: #EFAAAC;
+        padding-bottom: 97px;
+        &--top{
+            height: 518px;
+            width: 100%;
+            @media screen and (max-width : v.$tbw){
+                height: 138vw;
+            }
+            position: relative;
+        }
+    }
+    
+    &__txt01{
+        @include mix.bg();
+        background: url('./images/subttl_project01a.svg') no-repeat;
+        width: 10.12%;
+        height: 68.5%;
+        position: absolute;
+        top: 2.66%;
+        right: 19%;
+    }
+    &__txt02{
+        @include mix.bg();
+        background: url('./images/subttl_project01b.svg') no-repeat;
+        width: 10.12%;
+        height: 86.66%;
+        position: absolute;
+        top: 2.66%;
+        right: 31%;
+    }
+    &__txt03{
+        @include mix.bg();
+        background: url('./images/subttl_project02a.svg') no-repeat;
+        width: 10.12%;
+        height: 86.66%;
+        position: absolute;
+        top: 136px;
+        left: 31%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 35.73vw;
+
+        }
+    }
+    &__txt04{
+        @include mix.bg();
+        background: url('./images/subttl_project02b.svg') no-repeat;
+        width: 10.12%;
+        height: 69.6%;
+        position: absolute;
+        top: 136px;
+        left: 19%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 35.73vw;
+
+        }
+    }
+    &__author{
+        @include mix.bg();
+        background: url('./images/author_project.svg') no-repeat;
+        width: 294px;
+        height: 57px;
+        background-repeat: no-repeat;
+        margin: 0 auto 27px;
+
+    }
+    &__txt{
+        @include mix.fz(16);
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 24px;
+        line-height: 1.68;
+    }
+    &__youtube{
+        margin-bottom: 27px;
+        padding: 0 5.3%;
+        width: 100%;
+        &--inner{
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+        iframe{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    &__notice{
+        @include mix.bg();
+        background: url('./images/notice_project.svg') no-repeat;
+        width: 294px;
+        height: 23px;
+        margin: 0 auto 24px;
+    }
+    &__txt2{
+        @include mix.fz(14);
+        text-align: center;
+        margin:0 5.3% 35px;
+        line-height: 1.7;
+        
+    }
+    @media screen and (max-width : v.$tbw){
+        &__contents{
+            padding-bottom: 25.8vw;
+
+
+        }
+        &__author{
+            width: 78.4vw;
+            height: 15.2vw;
+            margin: 0 auto 7.2vw;
+        }
+        &__notice{
+            width: 78.4vw;
+            height: 6.15vw;
+            margin: 0 auto 6.4vw;
+            }
+        &__txt{
+            font-size: 4.2vw;
+        }
+        &__txt2{
+            margin-bottom: 9.3vw;
+        }
+    }
+
+
+}
+
+
+
+.novel{
+    #booking{
+    }
+    &__contents{
+        background: url('./images/bg_novel.png') no-repeat;
+        background-position: 0 0;
+        background-size: 100% auto;
+        background-color: #CEBB9A;
+        padding-bottom: 66px;
+        &--top{
+            height: 976px;
+            width: 100%;
+            position: relative;
+
+            @media screen and (max-width : v.$tbw){
+                height:260.3vw;
+            }
+        }
+    }
+    
+    &__txt01{
+        @include mix.bg();
+        background: url('./images/txt_novel1a.svg') no-repeat;
+        width: 10.66%;
+        height: 90.66%;
+        position: absolute;
+        top: 110px;
+        right: 17.86%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 29.333vw;
+
+        }
+    }
+    &__txt02{
+        @include mix.bg();
+        background: url('./images/txt_novel1b.svg') no-repeat;
+        width: 10.66%;
+        height: 101%;
+        position: absolute;
+        top: 110px;
+        right: 29.333%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 29.333vw;
+
+        }
+    }
+    &__txt03{
+        @include mix.bg();
+        background: url('./images/txt_novel2a.svg') no-repeat;
+        width: 10.66%;
+        height: 62.66%;
+        position: absolute;
+        top: 55px;
+        left: 30.666%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 14.66vw;
+
+        }
+    }
+    &__txt04{
+        @include mix.bg();
+        background: url('./images/txt_novel2b.svg') no-repeat;
+        width: 10.66%;
+        height: 101.3%;
+        position: absolute;
+        top: 55px;
+        left: 18.133%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 14.66vw;
+
+        }
+    }
+    &__txt05{
+        @include mix.bg();
+        background: url('./images/txt_novel3a.svg') no-repeat;
+        width: 10.66%;
+        height: 65%;
+        position: absolute;
+        top: 574px;
+        left: 51.22%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 153vw;
+
+        }
+    }
+    &__txt06{
+        @include mix.bg();
+        background: url('./images/txt_novel3b.svg') no-repeat;
+        width: 10.66%;
+        height: 95%;
+        position: absolute;
+        top: 574px;
+        left: 37.33%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 153vw;
+
+        }
+    }
+    &__author{
+        @include mix.bg();
+        background: url('./images/author_novel.svg') no-repeat;
+        width: 273px;
+        height: 93px;
+        background-repeat: no-repeat;
+        margin: 0 auto 25px;
+        &--img{
+            width: 143px;
+            height: auto;
+            display: block;
+            margin: 0 auto 27px;
+        }
+    }
+    &__txt{
+        @include mix.fz(14);
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.3;
+        span{
+            @include mix.fz(12);
+
+        }
+    }
+
+    &__notice{
+        @include mix.bg();
+        background: url('./images/date_novel.svg') no-repeat;
+        width: 295px;
+        height: 23px;
+        margin: 0 auto 27px;
+    }
+    &__txt2{
+        @include mix.fz(14);
+        text-align: center;
+        margin:0 5.3% 35px;
+        line-height: 1.7;
+        
+    }
+    @media screen and (max-width : v.$tbw){
+        &__contents{
+            padding-bottom: 17.6vw;
+        }
+        #booking{
+            padding-top: 17.333vw;
+        }
+        &__author{
+            width: 72.8vw;
+            height: 24.8vw;
+            margin: 0 auto 6.66vw;
+            &--img{
+                width: 38.2vw;
+                height: auto;
+                display: block;
+                margin: 0 auto 7.2vw;
+            }
+        }
+        &__notice{
+            width: 78.7vw;
+            height: 6.15vw;
+            margin: 0 auto 7.2vw;
+            }
+        &__txt{
+            font-size: 4.2vw;
+        }
+        &__txt2{
+            margin-bottom: 9.3vw;
+        }
+    }
+
+
+}
+.creator{
+    width: 100%;
+    padding: 50px 10% 0;
+    @media screen and (max-width : v.$tbw){
+        padding-top: 13vw;
+    }
+    .plane__txt{
+        margin-bottom: 26px;
+        @media screen and (max-width : v.$tbw){
+            margin-bottom: 7vw;
+        }
+    }
+    &__person{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            background: v.$bc;
+            padding: 30px 8% 46px;
+            margin-bottom: 40px;
+            @media screen and (max-width : v.$tbw){
+                padding: 8vw 8% 12vw;
+                margin-bottom: 10vw;
+            }
+        }
+        &--txt{
+            @include mix.fz(14);
+            line-height: 1.7;
+            text-align: center;
+            margin: 0 auto 30px;
+            @media screen and (max-width : v.$tbw){
+                margin-bottom: 8vw;
+            }
+        }
+        &--txtr{
+            @include mix.fz(14);
+            line-height: 1.7;
+            text-align: left;
+            margin: 0 auto 17px;
+        }
+        &--img{
+            width: 56%;
+            margin: 0 auto 18px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                border: solid 3px v.$bg;
+            }
+        }
+        &--name{
+            @include mix.fz(20);
+            text-align: center;
+            line-height: 1.7;
+            margin: 0 auto 15px;
+            span{
+                font-weight: 800;
+            }
+        }
+        &--sns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--tw{
+            @include mix.bg();
+            background: url('./images/icon_twitter.png') no-repeat 0 0;
+            width: 40px;
+            height: 40px;
+            margin: 0 7px;
+        }
+        &--insta{
+            @include mix.bg();
+            background: url('./images/icon_insta.png') no-repeat 0 0;
+            width: 40px;
+            height: 40px;
+            margin: 0 7px;
+
+        }
+        &--youtube{
+            @include mix.bg();
+            background: url('./images/icon_youtube.png') no-repeat 0 0;
+            width: 38px;
+            height: 29px;
+            margin: 0 7px;
+
+        }
+        &--comment{
+            border-top: solid 1px #000;
+            padding-top: 20px;
+            margin-bottom: 40px;
+        }
+        &--comtxt{
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+    }
+}
