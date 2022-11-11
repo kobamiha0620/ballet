@@ -33,7 +33,7 @@
 
 
         <section class="spcon">
-            <div class="fv">
+            <div class="fv" id="fv">
                 <a href="#top"><p class="sp__ttl load-fade">公式サイト 11月15日予約開始</p></a>
 
                 <p class="fv__txt01 load-fade2">秋元康 原作ストーリーから紡がれる</p>
@@ -54,7 +54,7 @@
                     <li class="scroll-fade">
                        <a href="#konoko">
                         <div class="about__creator--img">
-                         <img src="./dist/images/img_kono.png" alt="シンガー konoko（この子）">
+                            <img src="./dist/images/img_konoko.jpg" width="568px" height="568px" alt="シンガー konoko（この子）">
                         </div>
                          <p class="about__creator--name">シンガー<br>
                             <span>konoko（この子）</span></p>
@@ -63,7 +63,7 @@
                     <li class="scroll-fade2">
                         <a href="#kobashiri">
                          <div class="about__creator--img">
-                          <img src="./dist/images/img_kobashiri.png" alt="シンガー こばしり。">
+                            <img src="./dist/images/img_kobashiri.jpg" width="568px" height="568px" alt="シンガー こばしり。">
                          </div>
                           <p class="about__creator--name">シンガー<br>
                              <span>こばしり。</span></p>
@@ -73,7 +73,7 @@
                      <li class="scroll-fade">
                         <a href="#mimi">
                          <div class="about__creator--img">
-                          <img src="./dist/images/img_mimi.png" alt="サウンドクリエーター MIMI">
+                          <img src="./dist/images/img_mimi.jpg" width="568px" height="568px" alt="サウンドクリエーター MIMI">
                          </div>
                           <p class="about__creator--name">サウンドクリエーター<br>
                              <span>MIMI</span></p>
@@ -82,7 +82,7 @@
                      <li class="scroll-fade2">
                         <a href="#daisuke">
                          <div class="about__creator--img">
-                          <img src="./dist/images/img_daisuke.png" alt="イラストレーター ダイスケ リチャード">
+                            <img src="./dist/images/img_daisuke.jpg" width="568px" height="568px" alt="イラストレーター ダイスケ リチャード">
                          </div>
                           <p class="about__creator--name">イラストレーター<br>
                              <span>ダイスケ リチャード</span></p>
@@ -96,9 +96,9 @@
             <div class="news" id="news">
                 <h2 class="plane__ttl en scroll-fade">NEWS</h2>
                 <ul class="news__txts">
-                    <p class="news__txt scroll-fade"><span>11.15（火）</span><span>Amazonで書籍予約開始</span></p>
-                    <p class="news__txt scroll-fade"><span>11.15（火）</span><span>Amazonで書籍予約開始</span></p>
-                    <p class="news__txt scroll-fade"><span>11.15（火）</span><span>Amazonで書籍予約開始</span></p>
+                    <p class="news__txt scroll-fade"><a href="" target="__blank" rel="noopener noreferrer"><span>11.15（火）</span><span>amazonで書籍予約開始</span></a></p>
+                    <!-- <p class="news__txt scroll-fade"><span>11.15（火）</span><span>Amazonで書籍予約開始</span></p>
+                    <p class="news__txt scroll-fade"><span>11.15（火）</span><span>Amazonで書籍予約開始</span></p> -->
                 </ul>
             </div>
  
@@ -108,8 +108,9 @@
                     <div class="project__contents--top">
                         <p class="scroll-fade project__txt01">愛のない紡ぐ毎日</p>
                         <p class="scroll-fade2 project__txt02">微かに感じた温もりと</p>
-                        <p class="scroll-fade2 project__txt03">寂しさの理由さえもさ</p>
-                        <p class="scroll-fade3 project__txt04">そして夜の温度に</p>
+                        <p class="scroll-fade project__txt03">寂しさの理由さえもさ</p>
+                        <p class="scroll-fade2 project__txt04">そして夜の温度に</p>
+                        <p class="scroll-fade3 project__txt05">溶けていくの</p>
                     </div>
                     <h3 class="project__author scroll-fade">Vocal: この子 ×　こばしり。Sound　ProducerProducer：Mimi</h3>
                     <p class="project__txt scroll-fade">テレビ東京「日本シン人種図鑑」<br>番組テーマ曲に決定！</p>
@@ -122,9 +123,9 @@
                     <p class="project__notice">2022年12月23日 配信開始</p>
                     <p class="project__txt2">「この子」と「こばしり。」の二人が歌唱を担当し、作詞作曲を「MIMI」が担当した楽曲、『Bullets』のミュージックビデオを公開。イラストレーターを担当したのは、数多くの企業やアーティストタイアップを手がける新進気鋭のイラストレーター「ダイスケリチャード」。</p>
 
-                    <a href="" class="spotify scroll-fade" target="_blank" rel="noopener noreferrer">spotify</a>
-                    <a href="" class="amazonm scroll-fade" target="_blank" rel="noopener noreferrer">Amazon Music</a>
-                    <a href="" class="itune scroll-fade" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                    <span class="spotify scroll-fade">spotify</span>
+                    <span class="amazonm scroll-fade">Amazon Music</span>
+                    <span class="itune scroll-fade">Apple Music</span>
                 </div>
             </div>
 
@@ -140,13 +141,14 @@
                         <p class="scroll-fade2 novel__txt06">「なにか」を探し続けた。</p>
                     </div>
                     <h3 class="novel__author scroll-fade">原作・監修：秋元康 著者：坂上秋成 イラスト：ダイスケリチャード</h3>
-                    <img src="./dist/images/novel_img.jpg" class="novel__author--img scroll-fade" width="286px" height="376px" alt="出版レーベル：スニーカー文庫 （KADOKAWA）（C）YASUSHI AKIMOTO">
+                    <img src="./dist/images/img_book.jpg" class="novel__author--img scroll-fade" width="286px" height="376px" alt="出版レーベル：スニーカー文庫 （KADOKAWA）（C）YASUSHI AKIMOTO">
                     <p class="novel__txt scroll-fade">出版レーベル：スニーカー文庫 <br>（KADOKAWA）<br><span>（C）YASUSHI AKIMOTO</span></p>
 
                     <p class="novel__notice scroll-fade">2022年12月28日 発売予定</p>
                     <p class="novel__txt2 scroll-fade">『ファルセットの時間』（筑摩書房）や、『ONE PIECE novel LAW』（集英社）などで広く知られる人気作家・坂上秋成が著書を担当。</p>
-
-                    <a href="" class="amazon scroll-fade" target="_blank" rel="noopener noreferrer">Apple Music</a>
+                    <div class="amazon__wrapper">
+                    <p class="amazon scroll-fade"><a href="" target="__blank" rel="noopener noreferrer">amazonで予約する</a></p>
+                </div>
                 </div>
             </div>
 
@@ -156,47 +158,59 @@
                 <ul class="creator__person">
                     <li class="scroll-fade" id="konoko">
                         <div class="creator__person--img">
-                            <img src="./dist/images/img_kono.png" alt="シンガー konoko（この子）">
+                            <img src="./dist/images/img_konoko.jpg" width="568px" height="568px" alt="シンガー konoko（この子）">
                         </div>
                         <p class="creator__person--name">シンガー<br>
                             <span>konoko（この子）</span></p>
-                        <p class="creator__person--txt">福岡県出身の歌い手。名前は通りかかったペットショップで母がトイプードルを見て“この子かわいい！”と言ったことから。高校卒業頃からニコニコ動画にて動画投稿を開始。2014年より同サイトにて“歌い手”として活動を始める。カバー動画投稿をきっかけにネットを中心に活動をスタートさせ、関連動画再生回数は1,000万回を超える。若い女性を中心に支持を集める。</p>
-                        <div class="creator__person--sns">
-                            <a href="https://twitter.com/ko_noco" target="_blank" rel="noopener noreferrer" class="creator__person--tw"></a>
-                            <a href="https://www.instagram.com/ko_noco/" target="_blank" rel="noopener noreferrer" class="creator__person--insta"></a>
+                            <p class="creator__person--txt">2014年カバー動画投稿をきっかけにネットを中心に活動をスタートさせ、楽曲カバーを継続的に行いつつ、これまで2枚のオリジナルフルアルバムをリリースしている。楽曲によって様々な声色を使い分け、多彩な表現力で歌い上げていくのが特徴。
+                                セルフプロデュース力も高く、ビジュアル・アートワークのプロデュースはもちろん、自身でイラスト・デザインの制作やアパレルのデザインを行うなど多岐にわたる。
+                                また、自ら作詞・作曲を行うオリジナル楽曲の制作も精力的に行っている。</p>
+                            <div class="creator__person--comment">
+                                <p class="creator__person--comtxt">コメント</p>
+                                <p class="creator__person--txt">このたび「Bullets」を歌唱させていただきましたkonocoと申します。
+                                    繊細なストーリーやMIMIさんの描かれた楽曲の世界観に寄り添い、「寂しさ」「生き辛さ」という儚い感情を言葉の一つ一つに込め、歌わせていただきました。
+                                    こばしり。さんとのツインボーカルということもあり、2人の表現の違いにも耳を傾けていただけたら嬉しいです。</p>
+                            </div>
+                            <div class="creator__person--sns">
+                            <a href="https://twitter.com/ko_noco" target="_blank" rel="noopener noreferrer" class="creator__person--tw">Konoko Twitter</a>
+                            <a href="https://www.instagram.com/ko_noco/" target="_blank" rel="noopener noreferrer" class="creator__person--insta">Konoko Instagram</a>
                         </div>
                     </li>
                     <li class="scroll-fade" id="kobashiri">
                         <div class="creator__person--img">
-                            <img src="./dist/images/img_kobashiri.png" alt="シンガー こばしり。">
+                            <img src="./dist/images/img_kobashiri.jpg" width="568px" height="568px" alt="シンガー こばしり。">
                         </div>
                         <p class="creator__person--name">シンガー<br>
                             <span>こばしり。</span></p>
                         <p class="creator__person--txt">2017年11月にYouTubeを開始。メイクやファッションの動画を中心に投稿する美容系 YouTuber。トレードマークのショートカットとゆるい雰囲気が中高生/大学生の層に支持されている。「2018年2月にゲーム実況のサブチャンネル「こばしりはゲームがしたい。」を開設した。香水ブランド「KIMAMALabo」を立ち上げるなど精力的に活動を行なっている。</p>
                         <div class="creator__person--sns">
-                            <a href="" target="_blank" rel="noopener noreferrer" class="creator__person--tw"></a>
-                            <a href="" target="_blank" rel="noopener noreferrer" class="creator__person--insta"></a>
-                            <a href="" target="_blank" rel="noopener noreferrer" class="creator__person--youtube"></a>
+                            <a href="https://twitter.com/KIMAMALabo" target="_blank" rel="noopener noreferrer" class="creator__person--tw">こばしり。 Twitter</a>
+                            <a href="https://www.instagram.com/lovetomato_24" target="_blank" rel="noopener noreferrer" class="creator__person--insta">こばしり。 Instagram</a>
+                            <a href="https://www.youtube.com/c/kobashiri" target="_blank" rel="noopener noreferrer" class="creator__person--youtube">こばしり。Youtube</a>
                         </div>
                     </li>
 
                     <li class="scroll-fade" id="mimi">
                         <div class="creator__person--img">
-                            <img src="./dist/images/img_mimi.png" alt="サウンドクリエーター MIMI">
+                            <img src="./dist/images/img_mimi.jpg" width="568px" height="568px" alt="サウンドクリエーター MIMI">
                         </div>
                         <p class="creator__person--name">サウンドクリエーター<br>
                             <span>MIMI</span></p>
-                        <p class="creator__person--txt">現在、20歳の大学2年生。ピアノ歴17年。2016年6月19日より本格的にボカロPとして活動を開始。2018年に公開した「マシュマリー feat.初音ミク」がYouTube・ニコニコ動画にて注目を浴び、総再生回数は約440万回を誇る。(2021年12月現在)楽曲制作において「生きづらい世の中」をキーワードに、ファンからは、イントロから引き込まれるようなテンポ・メロディーが特徴され、「神イントロ」とも称され、支持されている。
-                        </p>
+                        <p class="creator__person--txt">2016年6月19日より本格的にボカロPとして活動を開始。2018年に公開した「マシュマリー feat.初音ミク」がYouTube・ニコニコ動画にて注目を浴び、総再生回数は約707万回を誇る。(2022年11月現在)楽曲制作において「生きづらい世の中」をキーワードに、ファンからは、イントロから引き込まれるようなテンポ・メロディーが支持されている。</p>
+                        <div class="creator__person--comment">
+                            <p class="creator__person--comtxt">コメント</p>
+                            <p class="creator__person--txt">今回バレッツプロジェクトへ楽曲を書き下ろさせて頂きましたMIMIと申します。ストーリーに常に内在している「生きづらさ」「寂しさ」といった感情を音と言葉に乗せて届けることが出来ていたら嬉しいです。素敵なプロジェクトに関わることが出来て幸せです。</p>
+
+                        </div>
                         <div class="creator__person--sns">
-                            <a href="https://twitter.com/mimi_3mi" target="_blank" rel="noopener noreferrer" class="creator__person--tw"></a>
-                            <a href="https://www.youtube.com/channel/UCam3IAA-nyfxRL8_wDQ35VA?app=desktop" target="_blank" rel="noopener noreferrer" class="creator__person--youtube"></a>
+                            <a href="https://twitter.com/mimi_3mi" target="_blank" rel="noopener noreferrer" class="creator__person--tw">MIMI Twitter</a>
+                            <a href="https://www.youtube.com/channel/UCam3IAA-nyfxRL8_wDQ35VA?app=desktop" target="_blank" rel="noopener noreferrer" class="creator__person--youtube">MIMI Youtube</a>
                         </div>
                     </li>
 
                     <li class="scroll-fade" id="daisuke">
                         <div class="creator__person--img">
-                            <img src="./dist/images/img_daisuke.png" alt="イラストレーター ダイスケ リチャード">
+                            <img src="./dist/images/img_daisuke.jpg" width="568px" height="568px" alt="イラストレーター ダイスケ リチャード">
                         </div>
                         <p class="creator__person--name">イラストレーター<br>
                             <span>ダイスケ リチャード</span></p>
@@ -210,8 +224,8 @@
 
                         </div>
                         <div class="creator__person--sns">
-                            <a href="https://twitter.com/daisukerichard" target="_blank" rel="noopener noreferrer" class="creator__person--tw"></a>
-                            <a href="https://www.instagram.com/daisukerichard/" target="_blank" rel="noopener noreferrer" class="creator__person--insta"></a>
+                            <a href="https://twitter.com/daisukerichard" target="_blank" rel="noopener noreferrer" class="creator__person--tw">ダイスケ リチャード Twitter</a>
+                            <a href="https://www.instagram.com/daisukerichard/" target="_blank" rel="noopener noreferrer" class="creator__person--insta">ダイスケ リチャード Instagram</a>
                         </div>
                     </li>
 
@@ -229,20 +243,20 @@
 
                         </div>
                         <div class="creator__person--sns">
-                            <a href="https://mobile.twitter.com/ssakagami7776" target="_blank" rel="noopener noreferrer" class="creator__person--tw"></a>
+                            <a href="https://mobile.twitter.com/ssakagami7776" target="_blank" rel="noopener noreferrer" class="creator__person--tw">坂上秋成 Twitter</a>
                         </div>
                     </li>
                 </ul>
             </section>
 
             <div class="footer">
-                <ul class="footer__bnrs">
+                <!-- <ul class="footer__bnrs">
                     <li>
                         <a href="" target="_blank" rel="noopener noreferrer">
                             <img src="https://placehold.jp/295x81.png" alt="">
                         </a>
                     </li>
-                </ul>
+                </ul> -->
                 <div class="footer__logo">
                     <a href="https://twinplanet.co.jp/" target="_blank" rel="noopener noreferrer" class="footer__logo--tp">TWIN PLANET</a>
                     <a href="https://incs-toenter.jp/" target="_blank" rel="noopener noreferrer" class="footer__logo--incs">Incs</a>

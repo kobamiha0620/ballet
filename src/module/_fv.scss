@@ -118,6 +118,9 @@
             }
             img{
                 border-radius: 50%;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
                 border: solid 3px v.$bg;
                 display: inline-block;
             }
@@ -144,6 +147,10 @@
     &__txt{
         @include mix.fz(16);
         margin: 1em 0 0;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -193,7 +200,7 @@
         height: 86.66%;
         position: absolute;
         top: 136px;
-        left: 31%;
+        left: 32.8%;
         @media screen and (max-width : v.$tbw){
 
             top: 35.73vw;
@@ -207,7 +214,21 @@
         height: 69.6%;
         position: absolute;
         top: 136px;
-        left: 19%;
+        left: 20.8%;
+        @media screen and (max-width : v.$tbw){
+
+            top: 35.73vw;
+
+        }
+    }
+    &__txt05{
+        @include mix.bg();
+        background: url('./images/subttl_project02c.svg') no-repeat;
+        width: 10.12%;
+        height: 49.33%;
+        position: absolute;
+        top: 136px;
+        left: 8.8%;
         @media screen and (max-width : v.$tbw){
 
             top: 35.73vw;
@@ -216,11 +237,11 @@
     }
     &__author{
         @include mix.bg();
-        background: url('./images/author_project.svg') no-repeat;
-        width: 294px;
-        height: 57px;
+        background: url('./images/img_musicauthor.svg') no-repeat;
+        width: 295px;
+        height: 101px;
         background-repeat: no-repeat;
-        margin: 0 auto 27px;
+        margin: 0 auto 30px;
 
     }
     &__txt{
@@ -269,11 +290,11 @@
         }
         &__author{
             width: 78.4vw;
-            height: 15.2vw;
-            margin: 0 auto 7.2vw;
+            height: 26.6vw;
+            margin: 0 auto 8vw;
         }
         &__notice{
-            width: 78.4vw;
+            width: 78.666vw;
             height: 6.15vw;
             margin: 0 auto 6.4vw;
             }

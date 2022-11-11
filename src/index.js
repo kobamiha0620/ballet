@@ -11,8 +11,6 @@ $(function(){
 function load_effect(){
     var tt = $(window).scrollTop();
     var hh = $(window).height();
-    console.log(tt);
-    console.log(hh);
 
     $('.load-fade').each(function(){
         var yy = $(this).offset().top;
@@ -38,12 +36,15 @@ function load_effect(){
             $(this).addClass('done');
         }
     });
+
 }
  
 //ふわっとスクロール
 function scroll_effect(){
     var tt = $(window).scrollTop();
     var hh = $(window).height();
+    let sptop = $('#fv').height();
+
     $('.scroll-fade').each(function(){
         var yy = $(this).offset().top+380;//効果発生開始タイミングを操作したい場合は数値を変更する
         if (tt > yy - hh){
@@ -68,7 +69,14 @@ function scroll_effect(){
             $(this).addClass('done');
         }
     });
+    if(tt > sptop){
+        $('.sp__link').addClass('btmposition');
+    }else{
+        $('.sp__link').removeClass('btmposition');
+    }
 }
+
+
 
 
 const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
@@ -87,3 +95,6 @@ const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
       });
     });
   }
+
+
+  

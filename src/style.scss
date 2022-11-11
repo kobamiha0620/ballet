@@ -41,7 +41,8 @@
 .load-up{opacity: 0; transform: translateY(100px)/*スクロールアップする距離*/; transition: all 2s/*処理にかかる時間*/;}
 .load-up.done, .load-fade.done, {opacity : 1; transform : translate(0, 0);}
 
-
+.btmposition.load-fade.done
+// {opacity : 1; transform : translate(0, 100%);}
 .load-fade2, .load-fade3{
   opacity : 0; transition : all 4s;
 } 
@@ -147,11 +148,28 @@
   margin: 0 auto;
 }
 .amazon{
-  @include mix.bg();
-  background: url('./images/amazon.png');
-  width: 202px;
-  height: 106px;
-  margin: 0 auto;
+  // @include mix.bg();
+  // background: url('./images/amazon.png');
+  // width: 202px;
+  // height: 106px;
+  // margin: 0 auto;
+  text-align: center;
+  a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 19px 0;
+    @include mix.fz(14);
+    background: #000;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  &__wrapper{
+    padding: 0 10.8%;
+  }
 }
 @media screen and (max-width : v.$tbw){
   .spotify{
@@ -168,8 +186,8 @@
     height: 6.93vw;
   }
   .amazon{
-    width: 53.86vw;
-    height: 28.26vw;
-    margin: 0 auto;
+    // width: 53.86vw;
+    // height: 28.26vw;
+    // margin: 0 auto;
   }
 }
