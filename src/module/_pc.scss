@@ -48,6 +48,15 @@
         bottom: 34px;
         right: 34px;
     }
+    &__link2{
+        @include mix.bg();
+        background: url('./images/icon.svg') no-repeat;
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        bottom: 34px;
+        right: 34px;
+    }
 }
 
 .spcon{
