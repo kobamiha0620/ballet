@@ -125,13 +125,16 @@
       }
     }
 }
-
+#SUBSCMUSIC{
+  padding-bottom: 40px;
+  display: block;
+}
 .spotify{
   @include mix.bg();
   background: url('./images/spotify.svg');
   width: 86px;
   height: 26px;
-  margin: 0 auto;
+  margin:  0 auto 0;
 }
 .amazonm{
   @include mix.bg();

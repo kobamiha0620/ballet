@@ -15,17 +15,16 @@ module.exports = {
         filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     //ファイルを出力する前にディレクトリをクリーンアップ
+    assetModuleFilename: 'images/[name][ext][query]',
     clean: true, 
-    //Asset Modules の出力先の指定
-    assetModuleFilename: 'images/[name][ext][query]'
 
   },
   //webpack-dev-server の設定
   devServer: {  
     //表示する静的ファイルのディレクトリを指定
-    static: './',
+    static: './dist/',
     // または static: path.join(__dirname, ''),
-    //サーバー起動時にブラウザを自動的に起動
+    //サーバー起動時にブラウザを自動的に起動  
     open: true,
     //webpack-dev-middleware 関連の設定
     devMiddleware: {
@@ -83,7 +82,7 @@ module.exports = {
       //Asset Modules の設定
       {
         //対象とするアセットファイルの拡張子を正規表現で指定
-        test: /\.(png|svg|jpe?g|gif)$/i,
+        test: /\.(png|svg|jpg|gif)$/i,
         //画像をコピーして出力
         type: 'asset/resource'  
       },
@@ -92,9 +91,11 @@ module.exports = {
   //プラグインの設定
   plugins: [
     new HtmlWebpackPlugin({
+      template: './src/index.html',
+
       chunks: ['index'],
       //出力先を output で指定した dist/js から dist/html に変更及びファイル名を指定
-      filename: path.resolve(__dirname, 'dist/html/index.html'),
+      filename: path.resolve(__dirname, 'dist/index.html'),
     }),
     new MiniCssExtractPlugin({
       // 抽出する CSS のファイル名
