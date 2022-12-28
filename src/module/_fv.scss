@@ -275,6 +275,7 @@
         height: 23px;
         margin: 0 auto 24px;
     }
+
     &__txt2{
         @include mix.fz(14);
         text-align: center;
@@ -443,6 +444,13 @@
     &__notice{
         @include mix.bg();
         background: url('./images/date_novel.svg') no-repeat;
+        width: 295px;
+        height: 23px;
+        margin: 0 auto 27px;
+    }
+    &__notice2{
+        @include mix.bg();
+        background: url('./images/date_novel2.svg') no-repeat;
         width: 295px;
         height: 23px;
         margin: 0 auto 27px;

@@ -57,6 +57,15 @@
         bottom: 34px;
         right: 34px;
     }
+    &__link3{
+        @include mix.bg();
+        background: url('./images/badge_1216.png') no-repeat;
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        bottom: 34px;
+        right: 34px;
+    }
 }
 
 .spcon{

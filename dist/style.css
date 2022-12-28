@@ -137,6 +137,19 @@ p, h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   width: 220px;
 }
+.pc__link3 {
+  background: url(images/badge_1216.png) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  bottom: 34px;
+  display: block;
+  height: 220px;
+  position: absolute;
+  right: 34px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  width: 220px;
+}
 
 .spcon {
   height: auto;
@@ -552,6 +565,17 @@ p, h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   width: 295px;
 }
+.novel__notice2 {
+  background: url(images/date_novel2.svg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  height: 23px;
+  margin: 0 auto 27px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  width: 295px;
+}
 .novel__txt2 {
   font-size: 0.875rem;
   line-height: 1.7;
@@ -941,6 +965,27 @@ p, h1, h2, h3, h4, h5, h6 {
     z-index: 10;
   }
   .sp__link2.btmposition {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .sp__link3 {
+    -webkit-transition: all 0.5s;
+    background: url(images/badge_1216.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    display: block;
+    height: 38.66vw;
+    position: fixed;
+    right: -4px;
+    text-indent: -9999px;
+    top: 110vw;
+    transition: all 0.5s;
+    white-space: nowrap;
+    width: 38.66vw;
+    z-index: 10;
+  }
+  .sp__link3.btmposition {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }

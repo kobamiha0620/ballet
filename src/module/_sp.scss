@@ -57,6 +57,24 @@
                 // transform: translate(0, 20%);
             }
         }
+        &__link3{
+            @include mix.bg();
+            background: url('./images/badge_1216.png') no-repeat;
+            width: 38.66vw;
+            height: 38.66vw;
+            display: block;
+            z-index: 10;
+            position: fixed;
+            top: 110vw;
+            right: -4px;
+            transition: all 0.5s;
+
+            &.btmposition{
+                transition: all 0.5s;
+                // transform: translate(0, 20%);
+            }
+        }
+
     }
         
 }
